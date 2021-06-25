@@ -1354,15 +1354,18 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.newsDetails-page .newsDetails-content .nextprevcard .date, .newsDetails-page .newsDetails-content .nextprevcard .title {
+.newsDetails-page .newsDetails-content .nextprevcard .date,
+.newsDetails-page .newsDetails-content .nextprevcard .title {
   position: relative;
   z-index: 9;
 }
-.newsDetails-page .newsDetails-content .nextprevcard .date i, .newsDetails-page .newsDetails-content .nextprevcard .title i {
+.newsDetails-page .newsDetails-content .nextprevcard .date i,
+.newsDetails-page .newsDetails-content .nextprevcard .title i {
   position: relative;
   z-index: 9;
 }
-.newsDetails-page .newsDetails-content .nextprevcard .date span, .newsDetails-page .newsDetails-content .nextprevcard .title span {
+.newsDetails-page .newsDetails-content .nextprevcard .date span,
+.newsDetails-page .newsDetails-content .nextprevcard .title span {
   position: relative;
   z-index: 9;
 }
@@ -1512,6 +1515,419 @@ button {
   margin-top: 100px;
 }
 
+.sharePeers .shareBreadCrumb {
+  background-color: rgba(18, 76, 134, 0.03);
+  padding-top: 34px;
+  padding-bottom: 79px;
+}
+.sharePeers .shareBreadCrumb ul {
+  display: block !important;
+  margin-bottom: 47px;
+}
+.sharePeers .shareBreadCrumb ul li {
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.sharePeers .shareBreadCrumb ul li a {
+  color: #000;
+}
+.sharePeers .shareBreadCrumb ul li::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  color: #000;
+}
+.sharePeers .shareBreadCrumb ul li:first-child a {
+  position: relative;
+}
+.sharePeers .shareBreadCrumb ul li:first-child a::before {
+  content: "";
+  color: #e5206e;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+.sharePeers .shareBreadCrumb ul li:last-child::after {
+  content: "";
+}
+.sharePeers .shareBreadCrumb h5 {
+  font-size: 65px;
+  font-weight: bold;
+  color: #0a0b0a;
+}
+.sharePeers .shareBreadCrumb p {
+  color: rgba(0, 37, 67, 0.5);
+  font-size: 14px;
+  line-height: 27px;
+  margin-top: 20px;
+}
+
+.sheepPeersFormImg {
+  margin-top: 35px;
+}
+.sheepPeersFormImg .rowParent {
+  margin: 0;
+}
+.sheepPeersFormImg .colsParent {
+  padding: 0;
+}
+.sheepPeersFormImg .sheepPeersForm {
+  padding-left: 85px;
+}
+.sheepPeersFormImg .sheepPeersForm .form-head {
+  font-size: 14px;
+  color: #002543;
+  margin-bottom: 30px;
+}
+.sheepPeersFormImg .sheepPeersForm .form-head span {
+  font-weight: bold;
+}
+.sheepPeersFormImg .sheepPeersForm .form-group {
+  position: relative;
+}
+.sheepPeersFormImg .sheepPeersForm .form-group label {
+  position: absolute;
+  background-color: #647583;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 9px;
+  border-radius: 2px;
+  top: -8px;
+  left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.sheepPeersFormImg .sheepPeersForm .form-group .form-control {
+  background-color: rgba(100, 117, 131, 0.07);
+  height: 51px;
+  border: 0;
+  border-radius: 0;
+  transition: all 0.5s ease;
+}
+.sheepPeersFormImg .sheepPeersForm .form-group .form-control::placeholder {
+  font-size: 14px;
+  color: rgba(0, 37, 67, 0.29);
+}
+.sheepPeersFormImg .sheepPeersForm .form-group .form-control:focus {
+  outline: none !important;
+  border: 1px solid #647583;
+  background-color: #fff;
+}
+.sheepPeersFormImg .sheepPeersForm .nice-select {
+  width: 100%;
+  float: none;
+  height: 51px;
+  line-height: 51px;
+  background-color: rgba(100, 117, 131, 0.07);
+  border: 0;
+  font-size: 14px;
+  color: rgba(0, 37, 67, 0.29);
+}
+.sheepPeersFormImg .sheepPeersForm .nice-select .list {
+  width: 100%;
+}
+.sheepPeersFormImg .sheepPeersForm textarea {
+  height: 135px !important;
+  resize: none;
+}
+.sheepPeersFormImg .sheepPeersImg {
+  overflow-x: hidden;
+  margin-top: -80px;
+}
+.sheepPeersFormImg .sheepPeersImg img {
+  width: 625px;
+  max-width: 100%;
+  margin-top: -80px;
+  margin-left: 50px;
+}
+.sheepPeersFormImg .input-group {
+  height: 51px;
+}
+.sheepPeersFormImg .input-group input:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.sheepPeersFormImg .input-group .input-group-text {
+  background-color: rgba(100, 117, 131, 0.07);
+  border: 0;
+}
+.sheepPeersFormImg .input-group label {
+  height: 51px;
+  top: 0 !important;
+  left: 0 !important;
+  font-size: 14px !important;
+  color: rgba(0, 37, 67, 0.29) !important;
+  background-color: rgba(100, 117, 131, 0.07) !important;
+  border: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin-bottom: 0 !important;
+  line-height: 51px;
+}
+.sheepPeersFormImg .input-group .custom-file-label::after {
+  display: none;
+}
+.sheepPeersFormImg .input-group .custom-file-input {
+  height: 51px;
+}
+.sheepPeersFormImg .input-group .custom-file-input:focus ~ .custom-file-label {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.sheepPeersFormImg .input-group .custom-file {
+  height: 51px;
+}
+.sheepPeersFormImg .input-group .deleteFile {
+  color: red;
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+  height: 51px;
+  line-height: 53px;
+  margin-top: 3px;
+  opacity: 0;
+  visibility: hidden;
+}
+.sheepPeersFormImg .input-group .deleteFile i {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.sheepPeersFormImg .btn-submit {
+  margin-top: 26px;
+  text-align: center;
+}
+.sheepPeersFormImg .btn-submit button {
+  background-color: #e5206e;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+  width: 143px;
+  height: 44px;
+  line-height: 44px;
+  display: inline-block;
+  border: 0;
+  border: 2px solid #e5206e;
+}
+.sheepPeersFormImg .btn-submit button:hover {
+  background-color: #fff;
+  color: #e5206e;
+}
+
+.findPlastic .shareBreadCrumb h5 {
+  margin-top: 10px;
+  font-size: 52px;
+}
+
+.contact-us-page .map iframe {
+  width: 100%;
+  height: 505px;
+  filter: grayscale(1);
+}
+.contact-us-page .contact-form-img {
+  margin-top: -150px;
+  background-color: #fff;
+  box-shadow: 0 3px 32px rgba(0, 0, 0, 0.16);
+  padding: 62px 65px;
+  position: relative;
+  z-index: 9;
+}
+.contact-us-page .contact-form-img .sheepPeersForm {
+  padding-left: 0;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .contactForm h5 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 16px;
+  color: #e5206e;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .contactForm p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 37, 67, 0.5);
+  line-height: 25px;
+  margin: 0;
+  margin-bottom: 31px;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .form-group label {
+  background-color: #e5206e;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .form-group .form-control {
+  background-color: rgba(229, 32, 110, 0.07);
+}
+.contact-us-page .contact-form-img .sheepPeersForm .form-group .form-control::placeholder {
+  color: rgba(104, 13, 49, 0.38);
+}
+.contact-us-page .contact-form-img .sheepPeersForm .form-group .form-control:focus {
+  border: 1px solid #e5206e;
+  background-color: #fff;
+}
+.contact-us-page .contact-form-img .sheepPeersForm textarea {
+  height: 111px !important;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .btn-submit button {
+  background-color: #e5206e;
+  border: 1px solid #e5206e;
+  width: 169px;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .btn-submit button .navLink {
+  color: #fff;
+  display: block;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .btn-submit button i {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #e5206e;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .btn-submit button:hover {
+  background-color: #fff;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .btn-submit button:hover .navLink {
+  color: #e5206e;
+}
+.contact-us-page .contact-form-img .sheepPeersForm .btn-submit button:hover i {
+  background-color: #e5206e;
+  color: #fff;
+}
+.contact-us-page .contact-form-img .card-img {
+  position: relative;
+}
+.contact-us-page .contact-form-img .card-img .overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.case-conclusion-page .consultation-card {
+  background-color: #fff;
+  width: 730px;
+  margin: auto;
+  max-width: 100%;
+  padding: 55px 95px;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.16);
+  margin-top: -100px;
+  position: relative;
+  z-index: 9;
+}
+.case-conclusion-page .consultation-card p {
+  font-size: 14px;
+  color: rgba(0, 37, 67, 0.5);
+  line-height: 27px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+.case-conclusion-page .consultation-card textarea {
+  height: 284px;
+  background-color: rgba(100, 117, 131, 0.07);
+  border: 0;
+  padding-top: 13px;
+  border-radius: 0;
+  resize: none;
+}
+.case-conclusion-page .consultation-card textarea::placeholder {
+  font-size: 14px;
+  color: rgba(0, 37, 67, 0.29);
+}
+.case-conclusion-page .consultation-card .btn-submit {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.case-conclusion-page .consultation-card .btn-submit button {
+  background-color: #e5206e;
+  border: 1px solid #e5206e;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+}
+.case-conclusion-page .consultation-card .btn-submit button i {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #e5206e;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+}
+.case-conclusion-page .consultation-card .btn-submit button:hover {
+  background-color: #fff;
+  color: #e5206e;
+}
+.case-conclusion-page .consultation-card .btn-submit button:hover i {
+  background-color: #e5206e;
+  color: #fff;
+}
+.case-conclusion-page .consultation-card .drop-zone {
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  border: 1px dashed #F3F4F5;
+  border-radius: 10px;
+  background-color: #F3F4F5;
+}
+.case-conclusion-page .consultation-card .drop-zone--over {
+  border-style: solid;
+}
+.case-conclusion-page .consultation-card .drop-zone__input {
+  display: none;
+}
+.case-conclusion-page .consultation-card .drop-zone__prompt {
+  font-size: 14px;
+  color: #002543;
+}
+.case-conclusion-page .consultation-card .drop-zone__prompt i {
+  color: #002543;
+  font-size: 20px;
+}
+.case-conclusion-page .consultation-card .drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+.case-conclusion-page .consultation-card .drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .mynavbar .nav-list .navItem {
     margin-left: 20px;
@@ -1519,6 +1935,14 @@ button {
 
   .pagination {
     width: 41%;
+  }
+
+  .sharePeers .shareBreadCrumb h5 {
+    font-size: 62px;
+  }
+
+  .contact-us-page .contact-form-img .card-img {
+    margin-top: 68px;
   }
 }
 @media (max-width: 991px) {
@@ -1609,6 +2033,25 @@ button {
   .pagParent .pageNumber-2 {
     left: unset;
     right: 0;
+  }
+
+  .sheepPeersFormImg .sheepPeersForm {
+    padding-right: 15px;
+    padding-left: 15px !important;
+  }
+
+  .sheepPeersFormImg .sheepPeersImg {
+    margin-top: 20px !important;
+  }
+
+  .sheepPeersFormImg .sheepPeersImg {
+    text-align: center;
+    margin-top: 40px !important;
+  }
+
+  .sheepPeersFormImg .sheepPeersImg img {
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 /* Small Screens */
@@ -1704,6 +2147,22 @@ button {
     font-size: 24px;
     line-height: 32px;
   }
+
+  .sharePeers .shareBreadCrumb h5 {
+    font-size: 55px;
+  }
+
+  .findPlastic .shareBreadCrumb h5 {
+    font-size: 41px;
+  }
+
+  .contact-us-page .contact-form-img {
+    padding: 62px 15px;
+  }
+
+  .case-conclusion-page .consultation-card {
+    padding: 55px 20px;
+  }
 }
 @media (max-width: 376px) {
   .header-slider .slider-nav-con .slick-list {
@@ -1757,8 +2216,22 @@ button {
   #floating i {
     font-size: 18px;
   }
+
+  .sharePeers .shareBreadCrumb h5 {
+    font-size: 45px;
+  }
+
+  .findPlastic .shareBreadCrumb h5 {
+    font-size: 31px;
+  }
 }
-.sidenav .sideMenue li a::before, .mynavbar .nav-list .NesteListParent::after, .breadcrumb ul li::after, .breadcrumb ul li:first-child a::before, .breadlinks ul li::after, .breadlinks ul li:first-child a::before {
+.activeInput {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translate(2px);
+}
+
+.sidenav .sideMenue li a::before, .mynavbar .nav-list .NesteListParent::after, .breadcrumb ul li::after, .breadcrumb ul li:first-child a::before, .breadlinks ul li::after, .breadlinks ul li:first-child a::before, .sharePeers .shareBreadCrumb ul li::after, .sharePeers .shareBreadCrumb ul li:first-child a::before {
   font-family: uicons-regular-rounded !important;
   font-style: normal;
   font-weight: normal !important;
@@ -1786,7 +2259,7 @@ button {
   -webkit-box-orient: vertical;
 }
 
-.mynavbar .nav-list .navItem:last-child, .mynavbar .nav-list .navItem:last-child i, .mynavbar .nav-list .sideMenue, .mynavbar .nav-list .sideMenue li, .mynavbar .nav-list .sideMenue li a, .header-slider .slider-item .header-content a, .header-slider .slider-item .header-content a:last-child, .card-feature, .card-feature .number, .latest-news .view-more a, .newsDetails-page .newsDetails-content .matchworld li a, .newsDetails-page .newsDetails-content .matchworld .social a {
+.mynavbar .nav-list .navItem:last-child, .mynavbar .nav-list .navItem:last-child i, .mynavbar .nav-list .sideMenue, .mynavbar .nav-list .sideMenue li, .mynavbar .nav-list .sideMenue li a, .header-slider .slider-item .header-content a, .header-slider .slider-item .header-content a:last-child, .card-feature, .card-feature .number, .latest-news .view-more a, .newsDetails-page .newsDetails-content .matchworld li a, .newsDetails-page .newsDetails-content .matchworld .social a, .contact-us-page .contact-form-img .sheepPeersForm .btn-submit button, .contact-us-page .contact-form-img .sheepPeersForm .btn-submit button i, .case-conclusion-page .consultation-card .btn-submit button, .case-conclusion-page .consultation-card .btn-submit button i {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

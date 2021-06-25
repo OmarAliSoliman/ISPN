@@ -57,6 +57,10 @@ $(document).ready(function () {
     $(".langSelect").niceSelect();
   }
 
+  if($('.customSelect').length){
+    $('.customSelect').niceSelect();
+  }
+
   $(".sidenav li.NesteListParent").click(function () {
     $(this).children("ul").slideToggle();
     $(this).children("i").toggleClass("iMenue");
@@ -68,11 +72,10 @@ $(document).ready(function () {
     });
   }
 
-
   var currentDir = $("a").css("direction");
   console.log(currentDir);
 
-  if($('.webinars-slider').length){
+  if ($(".webinars-slider").length) {
     $(".webinars-slider").slick({
       dots: true,
       infinite: false,
@@ -111,6 +114,37 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".sheepPeersForm").length) {
+    $(".sheepPeersForm .form-control").on("focus", function () {
+      $(this).parent(".form-group").find("label").addClass("activeInput");
+      console.log("foces");
+    });
+
+    $(".sheepPeersForm .form-control").on("blur", function () {
+      $(this).parent(".form-group").find("label").removeClass("activeInput");
+      console.log("foces");
+    });
+  }
+
+
+  if($('.upload-file').length){
+    $('body').on('change', '.custom-file-input ', function(e){
+      var fileName = e.target.files[0].name;
+      $(this).siblings('.custom-file-label').text(fileName);
+      $(this).closest('.upload-file').find(".deleteFile").addClass("activeInput");
+    })
+  }
+
+  if($('.deleteFile').length){
+    let fileLabel = $('.deleteFile').closest('.upload-file').find('.custom-file-label').text();
+    $('.deleteFile').click(function(){
+      // $(this).fadeOut(500);
+      $(this).closest('.upload-file').find('.custom-file-input').val("");
+      $(this).closest('.upload-file').find('.custom-file-label').text(fileLabel);
+      $(this).removeClass("activeInput");
+    })
+  }
+
 });
 
 function openNav() {
@@ -133,3 +167,81 @@ document.addEventListener("DOMContentLoaded", (e) => {
     splash.classList.add("displayNone");
   });
 });
+
+
+if($('.drop-zone').length){
+  document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+    const dropZoneElement = inputElement.closest(".drop-zone");
+  
+    dropZoneElement.addEventListener("click", (e) => {
+      inputElement.click();
+    });
+  
+    inputElement.addEventListener("change", (e) => {
+      if (inputElement.files.length) {
+        updateThumbnail(dropZoneElement, inputElement.files[0]);
+      }
+    });
+  
+    dropZoneElement.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZoneElement.classList.add("drop-zone--over");
+    });
+  
+    ["dragleave", "dragend"].forEach((type) => {
+      dropZoneElement.addEventListener(type, (e) => {
+        dropZoneElement.classList.remove("drop-zone--over");
+      });
+    });
+  
+    dropZoneElement.addEventListener("drop", (e) => {
+      e.preventDefault();
+  
+      if (e.dataTransfer.files.length) {
+        inputElement.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+      }
+  
+      dropZoneElement.classList.remove("drop-zone--over");
+    });
+  });
+  
+  /**
+   * Updates the thumbnail on a drop zone element.
+   *
+   * @param {HTMLElement} dropZoneElement
+   * @param {File} file
+   */
+  function updateThumbnail(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+  
+    // First time - remove the prompt
+    if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+      dropZoneElement.querySelector(".drop-zone__prompt").remove();
+    }
+  
+    // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+  
+    thumbnailElement.dataset.label = file.name;
+  
+    // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+  
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
+    } else {
+      thumbnailElement.style.backgroundImage = null;
+    }
+  }
+  
+
+}
+
