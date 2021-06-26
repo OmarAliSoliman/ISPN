@@ -11,7 +11,7 @@ $(document).ready(function () {
     infinite: true,
     loop: true,
     dots: false,
-    // autoplay: true,
+    autoplay: true,
     asNavFor: ".slider-nav",
     customPaging: function (slider, i) {
       var thumb = $(slider.$slides[i]).data();
@@ -24,6 +24,8 @@ $(document).ready(function () {
     asNavFor: ".slider-for",
     centerMode: true,
     focusOnSelect: true,
+    autoplay: true,
+
   });
 
   if ($(".bg-sidenavOpen").length) {
@@ -36,10 +38,10 @@ $(document).ready(function () {
 
   $(window).scroll(() => {
     if ($(this).scrollTop() > 20) {
-      $(".navbar").addClass("fixed-navbar");
+      $(".mynavbar").addClass("fixed-navbar");
       $("#floating").css("opacity", "1");
     } else {
-      $(".navbar").removeClass("fixed-navbar");
+      $(".mynavbar").removeClass("fixed-navbar");
       $("#floating").css("opacity", "0");
     }
   });
@@ -114,6 +116,45 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".our-team-slider").length) {
+    $(".our-team-slider").slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      rtl: currentDir == "rtl" ? true : false,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      loop: true,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 1026,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 524,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+
   if ($(".sheepPeersForm").length) {
     $(".sheepPeersForm .form-control").on("focus", function () {
       $(this).parent(".form-group").find("label").addClass("activeInput");
@@ -143,6 +184,13 @@ $(document).ready(function () {
       $(this).closest('.upload-file').find('.custom-file-label').text(fileLabel);
       $(this).removeClass("activeInput");
     })
+  }
+
+
+  if ($("#repeater").length) {
+    $("#repeater").createRepeater({
+      showFirstItemToDefault: true,
+    });
   }
 
 });
