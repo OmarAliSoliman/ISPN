@@ -11,7 +11,7 @@ $(document).ready(function () {
     infinite: true,
     loop: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     asNavFor: ".slider-nav",
     customPaging: function (slider, i) {
       var thumb = $(slider.$slides[i]).data();

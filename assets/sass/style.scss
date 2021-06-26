@@ -617,6 +617,9 @@ button {
         }
       }
     }
+    &:focus{
+      outline: 0 !important;
+    }
   }
   .slider-nav-con {
     position: absolute;
@@ -650,6 +653,9 @@ button {
           border-top: 3px solid #fff;
           transition: all 0.5s linear;
         }
+      }
+      &:focus{
+        outline: 0 !important;
       }
     }
     .slick-current {
@@ -1273,7 +1279,7 @@ button {
 .pagination {
   // display: inline-block;
   // border: 1px solid #000;
-  width: 35%;
+  width: 34%;
   margin: auto;
   overflow: auto;
   li {
@@ -2236,7 +2242,7 @@ button {
         }
       }
       .slick-prev {
-        left: 46%;
+        left: 45%;
         &::before {
           // left: 47%;
           content: "\f060";

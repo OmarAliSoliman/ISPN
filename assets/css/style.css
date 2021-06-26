@@ -567,6 +567,9 @@ button {
   background-color: transparent;
   color: #fff;
 }
+.header-slider .slider-item:focus {
+  outline: 0 !important;
+}
 .header-slider .slider-nav-con {
   position: absolute;
   bottom: 0;
@@ -601,6 +604,9 @@ button {
 .header-slider .slider-nav-con .item .slider-nav-content .card-body {
   border-top: 3px solid #fff;
   transition: all 0.5s linear;
+}
+.header-slider .slider-nav-con .item:focus {
+  outline: 0 !important;
 }
 .header-slider .slider-nav-con .slick-current .slider-nav-content .slider-number {
   color: #fff;
@@ -1188,7 +1194,7 @@ button {
 }
 
 .pagination {
-  width: 35%;
+  width: 34%;
   margin: auto;
   overflow: auto;
 }
@@ -2063,7 +2069,7 @@ button {
   color: #000;
 }
 .aboutImgPage .our-team .our-team-slider .slick-prev {
-  left: 46%;
+  left: 45%;
 }
 .aboutImgPage .our-team .our-team-slider .slick-prev::before {
   content: "";
