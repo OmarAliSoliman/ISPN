@@ -2286,6 +2286,37 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 1199px) {
+  .mynavbar .nav-list .navItem {
+    margin-left: 20px;
+  }
+
+  .pagination {
+    width: 41%;
+  }
+
+  .sharePeers .shareBreadCrumb h5 {
+    font-size: 62px;
+  }
+
+  .contact-us-page .contact-form-img .card-img {
+    margin-top: 68px;
+  }
+
+  .card-feature {
+    width: 100%;
+    height: auto;
+    min-height: 310px !important;
+  }
+
+  .aboutImgPage .our-team .our-team-slider .slick-next {
+    right: 45%;
+  }
+
+  .aboutImgPage .our-team .our-team-slider .slick-prev {
+    left: 45%;
+  }
+}
 @media (max-width: 1024px) {
   .mynavbar .nav-list .navItem {
     margin-left: 20px;
