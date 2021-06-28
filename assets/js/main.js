@@ -7,16 +7,17 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
+    fade: false,
     infinite: true,
     loop: true,
     dots: false,
     autoplay: true,
+    cssEase: 'ease',
     asNavFor: ".slider-nav",
-    customPaging: function (slider, i) {
-      var thumb = $(slider.$slides[i]).data();
-      return "<a>" + (i + 1) + "</a>";
-    },
+    // customPaging: function (slider, i) {
+    //   var thumb = $(slider.$slides[i]).data();
+    //   return "<a>" + (i + 1) + "</a>";
+    // },
   });
   $(".slider-nav").slick({
     slidesToShow: 3,

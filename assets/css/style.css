@@ -518,7 +518,7 @@ button {
   top: 0;
   left: 0;
   background-color: rgba(10, 11, 10, 0.59);
-  z-index: -1;
+  z-index: 1;
 }
 .header-slider .slider-item .header-content {
   text-align: center;
@@ -615,7 +615,7 @@ button {
 .header-slider .slider-nav-con .slick-current .slider-nav-content .card-body {
   border-color: #e5206e;
 }
-.header-slider .slick-track {
+.header-slider .slider-nav-con .slick-track {
   transform: none !important;
 }
 
@@ -869,7 +869,7 @@ button {
   padding-top: 35px;
   padding-left: 35px;
   padding-right: 35px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.16);
 }
 .webinars-card .date i {
@@ -1134,6 +1134,7 @@ button {
 }
 .breadcrumb ul li a {
   color: #fff;
+  font-size: 14px;
 }
 .breadcrumb ul li::after {
   content: "";
@@ -1551,6 +1552,7 @@ button {
 }
 .sharePeers .shareBreadCrumb ul li a {
   color: #000;
+  font-size: 14px;
 }
 .sharePeers .shareBreadCrumb ul li::after {
   content: "";
@@ -2249,8 +2251,9 @@ button {
 .memberShip .memberShip-form .btn-submit button {
   background-color: #e5206e;
   border: 1px solid #e5206e;
+  padding: 0 15px;
   text-align: center;
-  height: 45px;
+  height: 47px;
   line-height: 45px;
   color: #fff;
 }
